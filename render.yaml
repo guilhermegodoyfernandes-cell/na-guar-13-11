@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: naguara-portfolio
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Na'Guará – Arepa, tequeño e chicha</title>
+<meta name="description" content="Portfólio de sabores venezuelanos: arepa, tequeño e chicha.">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img src="images/logo.png" alt="Na'Guará – Comida venezolana: arepas e tequeños" width="800" height="800">
+  <p class="lead">Três sabores que contam a Venezuela: a arepa, o tequeño e a chicha.</p>
+  <button id="install" class="btn" hidden>Instalar o app</button>
+  <p id="ios-hint" class="hint" hidden>No iPhone: toque em Compartilhar e depois em “Adicionar à Tela de Início”.</p>
+</header>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<main>
+  <section id="arepa" class="dish">
+    <img src="images/arepa.png" alt="Arepa grelhada recheada com carne desfiada e queijo derretido" width="415" height="320" loading="lazy">
+    <h2>Arepa</h2>
+    <p class="tag">O pão de milho de todo dia</p>
+    <p>Massa de milho pré-cozido, moldada em disco e dourada na chapa. Crocante por fora, macia por dentro, ela é aberta ao meio e recheada.</p>
+    <h3>Recheios clássicos</h3>
+    <ul class="chips">
+      <li>Reina pepiada</li>
+      <li>Pabellón</li>
+      <li>Carne desfiada com queijo</li>
+      <li>Domino</li>
+    </ul>
+    <details>
+      <summary>Como se faz</summary>
+      <ol>
+        <li>Misture 1 xícara de farinha de milho pré-cozida com 1 xícara de água morna e uma pitada de sal.</li>
+        <li>Descanse 5 minutos e modele discos de 1 cm de altura.</li>
+        <li>Doure 5 minutos de cada lado em chapa quente e finalize 10 minutos no forno.</li>
+      </ol>
+    </details>
+    <div class="rate" data-dish="arepa" data-name="a arepa"></div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="tequeno" class="dish">
+    <img src="images/tequeno.png" alt="Tequeño dourado com queijo escorrendo" width="290" height="320" loading="lazy">
+    <h2>Tequeño</h2>
+    <p class="tag">A festa em forma de dedo</p>
+    <p>Palito de queijo branco enrolado em massa fina e frito até ficar dourado. Nasceu em Los Teques e hoje não falta em aniversário, batizado e fim de ano.</p>
+    <h3>Para acompanhar</h3>
+    <ul class="chips">
+      <li>Molho de alho</li>
+      <li>Guasacaca</li>
+      <li>Molho rosé</li>
+    </ul>
+    <details>
+      <summary>Como se faz</summary>
+      <ol>
+        <li>Abra a massa bem fina e corte tiras de 2 cm.</li>
+        <li>Envolva um palito de queijo branco com a tira, em espiral, selando as pontas.</li>
+        <li>Frite em óleo quente até dourar e sirva na hora.</li>
+      </ol>
+    </details>
+    <div class="rate" data-dish="tequeno" data-name="o tequeño"></div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="chicha" class="dish">
+    <svg viewBox="0 0 200 160" role="img" aria-label="Copo de chicha gelada com canela">
+      <path d="M52 24h96l-10 112a14 14 0 0 1-14 12H76a14 14 0 0 1-14-12z" fill="#FDF1DC"/>
+      <path d="M57 62h86l-5 74a14 14 0 0 1-14 12H76a14 14 0 0 1-14-12z" fill="#F4DDB0"/>
+      <ellipse cx="100" cy="62" rx="43" ry="6" fill="#FDF1DC"/>
+      <path d="M118 14l22 40" stroke="#C2742B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M126 12l22 40" stroke="#A85F1F" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+    <h2>Chicha</h2>
+    <p class="tag">Doce, cremosa e bem gelada</p>
+    <p>Bebida venezuelana feita com arroz cozido, leite e leite condensado, perfumada com canela e baunilha. Vem em copo grande, com gelo e canela por cima.</p>
+    <h3>Sabor</h3>
+    <ul class="chips">
+      <li>Arroz</li>
+      <li>Leite condensado</li>
+      <li>Canela</li>
+      <li>Baunilha</li>
+    </ul>
+    <details>
+      <summary>Como se faz</summary>
+      <ol>
+        <li>Cozinhe ½ xícara de arroz em 2 xícaras de água até ficar bem macio.</li>
+        <li>Bata no liquidificador com 2 xícaras de leite, ½ lata de leite condensado e 1 colher de chá de baunilha.</li>
+        <li>Sirva com gelo e canela em pó.</li>
+      </ol>
+    </details>
+    <div class="rate" data-dish="chicha" data-name="a chicha"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Na'Guará · Comida venezuelana</p>
+  <p class="small">Projeto de portfólio · funciona offline depois da primeira visita</p>
+</footer>
+
+<nav class="tabs" aria-label="Pratos">
+  <a href="#arepa">Arepa</a>
+  <a href="#tequeno">Tequeño</a>
+  <a href="#chicha">Chicha</a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
